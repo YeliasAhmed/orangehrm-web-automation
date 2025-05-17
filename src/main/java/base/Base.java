@@ -13,7 +13,7 @@ public class Base {
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.get(ConfigReader.get("url"));
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(60));
         return driver;
     }
 
